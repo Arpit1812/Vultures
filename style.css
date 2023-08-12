@@ -130,3 +130,8 @@ header{
     background-color: rgb(137, 135, 135);
 }
 
+@media only screen and (max-width: 1400px) {
+    .navbar-items {
+        display: none;
+    }
+}
