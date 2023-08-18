@@ -209,3 +209,45 @@ body {
         width: 300px;
     }
 }
+
+.product-tags{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+.img img {
+    width: 300px; /* Adjust this value to your desired width */
+    height: 300px;
+    /* This ensures the aspect ratio is maintained */
+}
+
+.product-name {
+    white-space: nowrap; /* Prevent line breaks within the first <p> tag */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display ellipsis if text overflows horizontally */
+    max-width: 100%; /* Ensure the text doesn't overflow the container */
+    margin-bottom: 5px;
+}
+
+.product-price {
+    margin: 0;
+}
+
+.cart-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 300px;
+    padding: 10px 0;
+    font-weight: 900;
+    text-decoration: solid;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: auto;
+    text-align: left;
+}
