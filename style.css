@@ -1,18 +1,39 @@
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
     justify-content: center;
     min-height: 100vh;
-    width: 100dvw;
-    /*background: url('background.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;*/
+    width: 100%;
+    overflow-x: hidden !important;
 }
 
+/*CUSTOM SCROLLBAR*/
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*NAVBAR*/
 .navbar{
     top: 0;
     left: 0;
@@ -82,7 +103,7 @@ body {
 
 /* LOGO */
 .navbar-logo img{
-    width: 160px;
+    width: 200px;
 }
 
 /* NAVBAR ELEMENTS */
@@ -122,6 +143,11 @@ body {
 }
 
 /* ICONS */
+.navbar-icons {
+    /*200 - 140*/
+    margin-right: 5%;
+}
+
 .navbar-icons i {
     cursor: pointer;
     font-size: x-large;
@@ -156,6 +182,8 @@ body {
                 .bottom-opts,
                 .bottom-opts a{
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -189,25 +217,6 @@ body {
 
 .custom-container .bottom-opts a:hover {
     background-color: rgb(137, 135, 135);
-}
-
-@media (max-width: 1000px) {
-    .toggle-btn {
-        display: block;
-    }
-
-    .dropdown-menu {
-        display: block;
-    }
-
-    .navbar-items, 
-    .navbar-items a {
-        display: none;
-    }
-
-    .navbar-logo img{
-        width: 300px;
-    }
 }
 
 .product-tags{
@@ -251,3 +260,63 @@ body {
     margin-right: auto;
     text-align: left;
 }
+
+@media only screen and (max-width: 1000px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .navbar-icons {
+        margin: 0px;
+    }
+
+    .navbar-items, 
+    .navbar-items a {
+        display: none;
+    }
+
+    .navbar-logo img{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 415px)
+{
+    .navbar {
+        padding: 20px 15px;
+    }
+    .navbar-logo img{
+        width: 200px;
+    }
+    .toggle-btn,
+    .navbar-icons i {
+        font-size: large;
+    }
+    .custom-container .top-text {
+        font-size: 38px;
+    }
+    .custom-container .bottom-opts {
+        margin-left: auto;
+        margin-right: auto;
+        
+        width: 70%;
+
+        font-size: 10px;
+    }
+    .custom-container .bottom-opts a {
+        margin-bottom: 10px;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        height: 50px;
+        width: 250px;
+        
+        border: none;
+    }
+}
+
+/*FOR GALAXY FOLD, WE NEED TO MAKE IT RESPONSIVE*/
