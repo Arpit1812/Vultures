@@ -265,20 +265,16 @@ html, body {
     .toggle-btn {
         display: block;
     }
-
     .dropdown-menu {
         display: block;
     }
-
     .navbar-icons {
         margin: 0px;
     }
-
     .navbar-items, 
     .navbar-items a {
         display: none;
     }
-
     .navbar-logo img{
         width: 250px;
     }
