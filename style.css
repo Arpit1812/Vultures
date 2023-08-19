@@ -296,11 +296,6 @@ html, body {
         font-size: 38px;
     }
     .custom-container .bottom-opts {
-        margin-left: auto;
-        margin-right: auto;
-        
-        width: 70%;
-
         font-size: 10px;
     }
     .custom-container .bottom-opts a {
