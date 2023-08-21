@@ -144,7 +144,7 @@ html, body {
 
 /* ICONS */
 .navbar-icons {
-    /*200 - 140*/
+    /*200 - 140, nvm*/
     margin-right: 5%;
 }
 
@@ -165,7 +165,7 @@ html, body {
     position: static;
     width: 100%;
 }
-
+/* IMAGE */
 .custom-container .img-container img {
     display: block;
     
@@ -177,6 +177,7 @@ html, body {
     margin-bottom: 10px;
 }
 
+/* TOP TEXT */
 .custom-container 
                 .top-text,
                 .bottom-opts,
@@ -196,6 +197,7 @@ html, body {
     margin-bottom: 10px;
 }
 
+/* BOTTOM OPTIONS */
 .custom-container .bottom-opts a {
     text-decoration: none;
     color: white;
@@ -263,6 +265,7 @@ html, body {
 
 @media only screen and (max-width: 1000px) {
     .toggle-btn {
+        margin-right: 5%;
         display: block;
     }
     .dropdown-menu {
@@ -280,6 +283,8 @@ html, body {
     }
 }
 
+/*prob should implement ipad width as well, lets see.*/
+
 @media only screen and (max-width: 415px)
 {
     .navbar {
@@ -291,6 +296,9 @@ html, body {
     .toggle-btn,
     .navbar-icons i {
         font-size: large;
+    }
+    .custom-container .img-container img{
+        width: 80%;
     }
     .custom-container .top-text {
         font-size: 38px;
