@@ -221,6 +221,81 @@ html, body {
     background-color: rgb(137, 135, 135);
 }
 
+/*CATEGORIES*/
+
+.shop-categories {
+    width: 100%;
+    display: flex;
+
+    padding: 10px;
+}
+
+.display-container {
+    width: fit-content; /*im not sure if fit content is even the right thing to be using*/
+
+    position: relative;
+    text-align: center;
+
+    padding: 10px 2.5px;
+}
+
+.display-container:hover img {
+    filter: grayscale(0%);
+}
+
+.display-container:hover .desc .text {
+    color: #ef5501;
+}
+
+.display-container img {
+    width: 100%;
+
+    filter: grayscale(100%) brightness(60%);
+    cursor: pointer;
+
+    transition: .4s ease-in;
+}
+
+.display-container .desc {
+    width: 100%;
+    
+    padding: 0px 10px;
+
+    color: white;
+
+    position: absolute;
+    bottom: 20%;
+
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-container .desc .icon {
+    width: 20%;
+}
+
+.display-container .desc .text {
+    width: 80%;
+
+    font-weight: bold;
+    font-size:larger;
+    font-family: 'Ubuntu', sans-serif;
+
+    text-align: left;
+}
+
+/*FLEX PERCENTAGE OF EACH CATEGORY IN 100% WIDTH SPACE*/
+.shop-categories .hunting,
+.shop-categories .security,
+.shop-categories .health,
+.shop-categories .manufacturing,
+.shop-categories .headphones {
+    flex: 25%;
+}
+
+/*MOST SOLD PRODUCTS*/
 .product-tags{
     margin-top: 50px;
     display: flex;
