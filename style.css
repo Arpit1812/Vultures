@@ -243,7 +243,7 @@ html, body {
     filter: grayscale(0%);
 }
 
-.display-container:hover .desc .text {
+.display-container:hover .desc {
     color: #ef5501;
 }
 
@@ -274,13 +274,15 @@ html, body {
 
 .display-container .desc .icon {
     width: 20%;
+    
+    font-size: xx-large;
 }
 
 .display-container .desc .text {
     width: 80%;
 
     font-weight: bold;
-    font-size:larger;
+    font-size: larger;
     font-family: 'Ubuntu', sans-serif;
 
     text-align: left;
@@ -336,6 +338,16 @@ html, body {
     cursor: pointer;
     margin-right: auto;
     text-align: left;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1150px) {
+    .display-container .desc .text {
+        font-size:medium;
+    }
+    .display-container .desc .icon {
+        font-size: x-large;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
