@@ -21,7 +21,7 @@ app.get("/", function(req, res) {
 app.get("/about", function(req, res) {
 
     res.sendFile(__dirname + "/about.html")
-}
+})
 // Start the server
 app.listen(3000, () => {
     console.log('Server is running on port');
