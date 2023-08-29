@@ -18,9 +18,17 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html")
 })
 
-app.get("/about", function(req, res) {
+app.get("/about-us", function(req, res) {
 
-    res.sendFile(__dirname + "/about.html")
+    res.sendFile('about-us.html', { root: __dirname + '/public' });
+})
+
+app.get("/services", function(req, res) {
+    res.sendFile('services.html', { root: __dirname + '/public' });
+})
+
+app.get("/contact-us", function(req, res) {
+    res.sendFile('Contact-us.html', { root: __dirname + '/public' });
 })
 // Start the server
 app.listen(3000, () => {
